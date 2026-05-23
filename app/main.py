@@ -148,7 +148,10 @@ def decorate_country(
     node.set("style", serialize_style(existing_style))
     node.set("class", "mapped-country")
     node.set("data-country-code", country_code)
+    node.set("data-country", str(country.get("country", country_code)))
     node.set("data-title", str(country.get("title", "")))
+    node.set("data-year", str(country.get("year", "")))
+    node.set("data-image", str(country.get("image", "")))
     node.set("data-imdb", str(country.get("imdb", "")))
 
     title_text = country.get("title") or country.get("country") or country_code

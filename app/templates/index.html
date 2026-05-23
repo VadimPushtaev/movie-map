@@ -12,27 +12,17 @@
         {{ map_svg }}
       </section>
 
-      <aside class="country-panel" aria-label="Configured countries">
-        <h1>Movie Map</h1>
-        <p class="lede">Countries are filled from <code>config.yaml</code>.</p>
-
-        <div class="country-list">
-          {% for code, country in countries.items() %}
-            <article class="country-item">
-              <img src="{{ country.image }}" alt="Poster for {{ country.title }}" loading="lazy">
-              <div>
-                <h2>{{ country.country or code }}</h2>
-                <p>{{ country.title }}{% if country.year %} · {{ country.year }}{% endif %}</p>
-                {% if country.imdb %}
-                  <a href="{{ country.imdb }}" rel="noreferrer" target="_blank">IMDb</a>
-                {% endif %}
-              </div>
-            </article>
-          {% else %}
-            <p>No countries configured yet.</p>
-          {% endfor %}
+      <aside class="movie-panel" data-movie-panel hidden aria-live="polite">
+        <button class="panel-close" type="button" data-panel-close aria-label="Close movie details">&times;</button>
+        <img data-panel-image alt="">
+        <div class="movie-copy">
+          <p data-panel-country></p>
+          <h1 data-panel-title></h1>
+          <a data-panel-imdb rel="noreferrer" target="_blank">IMDb</a>
         </div>
       </aside>
     </main>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
   </body>
 </html>
