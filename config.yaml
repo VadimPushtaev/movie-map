@@ -95,6 +95,12 @@ countries:
     year: 2007
     imdb: https://www.imdb.com/title/tt0847880/
     image: /static/images/russia-cargo-200.jpg
+  SE:
+    country: Sweden
+    title: Wild Strawberries
+    year: 1957
+    imdb: https://www.imdb.com/title/tt0050986/
+    image: /static/images/sweden-wild-strawberries.jpg
   UA:
     country: Ukraine
     title: "Mavka: The Forest Song"
