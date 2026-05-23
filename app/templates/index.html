@@ -9,7 +9,14 @@
   <body>
     <main class="layout">
       <section class="map-panel" aria-label="World movie map">
-        {{ map_svg }}
+        <div class="map-shell" data-map-shell>
+          <div class="map-controls" aria-label="Map zoom controls">
+            <button type="button" data-zoom-in aria-label="Zoom in" title="Zoom in">+</button>
+            <button type="button" data-zoom-out aria-label="Zoom out" title="Zoom out">-</button>
+            <button type="button" data-zoom-reset aria-label="Reset zoom" title="Reset zoom">Reset</button>
+          </div>
+          {{ map_svg }}
+        </div>
       </section>
 
       <aside class="movie-panel" data-movie-panel aria-live="polite">

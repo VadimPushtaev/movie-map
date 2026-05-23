@@ -28,11 +28,45 @@ body {
 }
 
 .map-panel {
-  display: grid;
-  align-items: center;
   min-width: 0;
   padding: 28px;
   background: #000000;
+}
+
+.map-shell {
+  position: relative;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 56px);
+  overflow: hidden;
+}
+
+.map-controls {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  display: flex;
+  gap: 6px;
+}
+
+.map-controls button {
+  min-width: 36px;
+  height: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+  background: rgba(8, 10, 15, 0.84);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.map-controls button:hover {
+  border-color: rgba(255, 255, 255, 0.34);
+  background: rgba(18, 22, 31, 0.92);
 }
 
 .world-map {
@@ -41,16 +75,26 @@ body {
   height: auto;
   max-height: calc(100vh - 56px);
   filter: drop-shadow(0 16px 30px rgba(255, 255, 255, 0.08));
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.world-map.is-panning {
+  cursor: grabbing;
 }
 
 .world-map path {
   stroke: #1f2630;
   stroke-width: 0.9;
+  vector-effect: non-scaling-stroke;
   transition: filter 140ms ease, opacity 140ms ease;
 }
 
 .world-map .mapped-country {
   cursor: pointer;
+  stroke-width: 1.6;
+  vector-effect: non-scaling-stroke;
 }
 
 .world-map .mapped-country:hover {
@@ -127,6 +171,11 @@ h1 {
 
   .world-map {
     max-height: none;
+  }
+
+  .map-shell {
+    height: auto;
+    min-height: 52vh;
   }
 
   .movie-panel {

@@ -144,7 +144,7 @@ def decorate_country(
     existing_style["fill"] = f"url(#{pattern_id})"
     existing_style.setdefault("fill-rule", "evenodd")
     existing_style["stroke"] = "#ffffff"
-    existing_style["stroke-width"] = "1.2"
+    existing_style["stroke-width"] = "1.6"
     node.set("style", serialize_style(existing_style))
     node.set("class", "mapped-country")
     node.set("data-country-code", country_code)
