@@ -61,6 +61,7 @@ def load_config(path: Path) -> dict[str, Any]:
 def build_map_svg(svg_path: Path, countries: dict[str, dict[str, Any]]) -> str:
     root = ET.parse(svg_path).getroot()
     ensure_accessible_svg(root)
+    darken_unmapped_countries(root)
     defs = ensure_defs(root)
 
     for country_code, country in countries.items():
@@ -73,6 +74,16 @@ def build_map_svg(svg_path: Path, countries: dict[str, dict[str, Any]]) -> str:
         decorate_country(country_node, country_code, pattern_id, country)
 
     return ET.tostring(root, encoding="unicode")
+
+
+def darken_unmapped_countries(root: ET.Element) -> None:
+    for element in root.iter():
+        if "data-id" not in element.attrib:
+            continue
+        style = parse_style(element.attrib.get("style", ""))
+        style["fill"] = "#222831"
+        style.setdefault("fill-rule", "evenodd")
+        element.set("style", serialize_style(style))
 
 
 def ensure_accessible_svg(root: ET.Element) -> None:
