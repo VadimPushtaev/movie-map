@@ -1,0 +1,7 @@
+services:
+  movie-map:
+    build: .
+    ports:
+      - "7419:7419"
+    environment:
+      PORT: "7419"

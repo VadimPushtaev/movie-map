@@ -1,0 +1,49 @@
+countries:
+  BT:
+    country: Bhutan
+    title: The Monk and the Gun
+    year: 2023
+    imdb: https://www.imdb.com/title/tt15560314/
+    image: /static/images/bhutan-the-monk-and-the-gun.jpg
+  EE:
+    country: Estonia
+    title: Smoke Sauna Sisterhood
+    year: 2023
+    imdb: https://www.imdb.com/title/tt23640230/
+    image: /static/images/estonia-smoke-sauna-sisterhood.jpg
+  FR:
+    country: France
+    title: Little Amelie or the Character of Rain
+    year: 2025
+    imdb: https://www.imdb.com/title/tt29313285/
+    image: /static/images/france-little-amelie.jpg
+  FI:
+    country: Finland
+    title: The Other Side of Hope
+    year: 2017
+    imdb: https://www.imdb.com/title/tt5222918/
+    image: /static/images/finland-the-other-side-of-hope.jpg
+  HU:
+    country: Hungary
+    title: Son of the White Mare
+    year: 1981
+    imdb: https://www.imdb.com/title/tt0083931/
+    image: /static/images/hungary-son-of-the-white-mare.jpg
+  IR:
+    country: Iran
+    title: The Circle
+    year: 2000
+    imdb: https://www.imdb.com/title/tt0255094/
+    image: /static/images/iran-the-circle.jpg
+  JP:
+    country: Japan
+    title: Happy Hour
+    year: 2015
+    imdb: https://www.imdb.com/title/tt4780662/
+    image: /static/images/japan-happy-hour.jpg
+  RU:
+    country: Russia
+    title: Cargo 200
+    year: 2007
+    imdb: https://www.imdb.com/title/tt0847880/
+    image: /static/images/russia-cargo-200.jpg

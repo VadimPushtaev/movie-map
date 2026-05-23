@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Map</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <main class="layout">
+      <section class="map-panel" aria-label="World movie map">
+        {{ map_svg }}
+      </section>
+
+      <aside class="country-panel" aria-label="Configured countries">
+        <h1>Movie Map</h1>
+        <p class="lede">Countries are filled from <code>config.yaml</code>.</p>
+
+        <div class="country-list">
+          {% for code, country in countries.items() %}
+            <article class="country-item">
+              <img src="{{ country.image }}" alt="Poster for {{ country.title }}" loading="lazy">
+              <div>
+                <h2>{{ country.country or code }}</h2>
+                <p>{{ country.title }}{% if country.year %} · {{ country.year }}{% endif %}</p>
+                {% if country.imdb %}
+                  <a href="{{ country.imdb }}" rel="noreferrer" target="_blank">IMDb</a>
+                {% endif %}
+              </div>
+            </article>
+          {% else %}
+            <p>No countries configured yet.</p>
+          {% endfor %}
+        </div>
+      </aside>
+    </main>
+  </body>
+</html>
