@@ -5,6 +5,24 @@ countries:
     year: 2023
     imdb: https://www.imdb.com/title/tt15560314/
     image: /static/images/bhutan-the-monk-and-the-gun.jpg
+  CN:
+    country: China
+    title: Crouching Tiger, Hidden Dragon
+    year: 2000
+    imdb: https://www.imdb.com/title/tt0190332/
+    image: /static/images/china-crouching-tiger-hidden-dragon.jpg
+  DE:
+    country: Germany
+    title: Stroszek
+    year: 1977
+    imdb: https://www.imdb.com/title/tt0075276/
+    image: /static/images/germany-stroszek.jpg
+  DK:
+    country: Denmark
+    title: The Girl with the Needle
+    year: 2024
+    imdb: https://www.imdb.com/title/tt10236164/
+    image: /static/images/denmark-the-girl-with-the-needle.jpg
   EE:
     country: Estonia
     title: Smoke Sauna Sisterhood
@@ -23,6 +41,18 @@ countries:
     year: 2017
     imdb: https://www.imdb.com/title/tt5222918/
     image: /static/images/finland-the-other-side-of-hope.jpg
+  GB:
+    country: United Kingdom
+    title: Hard Truths
+    year: 2024
+    imdb: https://www.imdb.com/title/tt11891850/
+    image: /static/images/gb-hard-truths.jpg
+  HK:
+    country: Hong Kong
+    title: The Heroic Trio
+    year: 1993
+    imdb: https://www.imdb.com/title/tt0105619/
+    image: /static/images/hong-kong-the-heroic-trio.jpg
   HU:
     country: Hungary
     title: Son of the White Mare
@@ -35,15 +65,39 @@ countries:
     year: 2000
     imdb: https://www.imdb.com/title/tt0255094/
     image: /static/images/iran-the-circle.jpg
+  IT:
+    country: Italy
+    title: There's Still Tomorrow
+    year: 2023
+    imdb: https://www.imdb.com/title/tt21800162/
+    image: /static/images/italy-theres-still-tomorrow.jpg
   JP:
     country: Japan
     title: Happy Hour
     year: 2015
     imdb: https://www.imdb.com/title/tt4780662/
     image: /static/images/japan-happy-hour.jpg
+  LV:
+    country: Latvia
+    title: Flow
+    year: 2024
+    imdb: https://www.imdb.com/title/tt4772188/
+    image: /static/images/latvia-flow.jpg
+  PL:
+    country: Poland
+    title: Green Border
+    year: 2023
+    imdb: https://www.imdb.com/title/tt27722543/
+    image: /static/images/poland-green-border.jpg
   RU:
     country: Russia
     title: Cargo 200
     year: 2007
     imdb: https://www.imdb.com/title/tt0847880/
     image: /static/images/russia-cargo-200.jpg
+  UA:
+    country: Ukraine
+    title: "Mavka: The Forest Song"
+    year: 2023
+    imdb: https://www.imdb.com/title/tt6685538/
+    image: /static/images/ukraine-mavka-the-forest-song.jpg
