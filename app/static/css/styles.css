@@ -22,7 +22,8 @@ body {
 }
 
 .layout {
-  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
   min-height: 100vh;
 }
 
@@ -57,41 +58,9 @@ body {
 }
 
 .movie-panel {
-  position: fixed;
-  top: 24px;
-  right: 24px;
-  z-index: 10;
-  width: min(320px, calc(100vw - 48px));
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  border-left: 1px solid var(--line);
   background: var(--panel);
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.48);
-  overflow: hidden;
-}
-
-.movie-panel[hidden] {
-  display: none;
-}
-
-.panel-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.72);
-  color: var(--ink);
-  cursor: pointer;
-  font-size: 24px;
-  line-height: 1;
-}
-
-.panel-close:hover {
-  border-color: rgba(255, 255, 255, 0.42);
+  min-width: 0;
 }
 
 .movie-panel img {
@@ -102,8 +71,12 @@ body {
   background: #1a1f2b;
 }
 
+.movie-panel img[hidden] {
+  display: none;
+}
+
 .movie-copy {
-  padding: 18px;
+  padding: 28px 24px;
 }
 
 h1,
@@ -135,11 +108,19 @@ h1 {
   text-decoration: none;
 }
 
+.movie-copy a[hidden] {
+  display: none;
+}
+
 .movie-copy a:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
   .map-panel {
     padding: 18px;
   }
@@ -149,9 +130,7 @@ h1 {
   }
 
   .movie-panel {
-    top: auto;
-    right: 14px;
-    bottom: 14px;
-    width: min(280px, calc(100vw - 28px));
+    border-top: 1px solid var(--line);
+    border-left: 0;
   }
 }

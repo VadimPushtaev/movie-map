@@ -1,23 +1,22 @@
 const panel = document.querySelector("[data-movie-panel]");
-const closeButton = document.querySelector("[data-panel-close]");
 const panelImage = document.querySelector("[data-panel-image]");
 const panelCountry = document.querySelector("[data-panel-country]");
 const panelTitle = document.querySelector("[data-panel-title]");
 const panelImdb = document.querySelector("[data-panel-imdb]");
+
+panelImage.hidden = true;
+panelImdb.hidden = true;
 
 function openMoviePanel(country) {
   const year = country.dataset.year ? ` · ${country.dataset.year}` : "";
 
   panelImage.src = country.dataset.image;
   panelImage.alt = `Poster for ${country.dataset.title}`;
+  panelImage.hidden = false;
   panelCountry.textContent = `${country.dataset.country}${year}`;
   panelTitle.textContent = country.dataset.title;
   panelImdb.href = country.dataset.imdb;
-  panel.hidden = false;
-}
-
-function closeMoviePanel() {
-  panel.hidden = true;
+  panelImdb.hidden = false;
 }
 
 document.addEventListener("click", (event) => {
@@ -27,12 +26,4 @@ document.addEventListener("click", (event) => {
   }
 
   openMoviePanel(country);
-});
-
-closeButton.addEventListener("click", closeMoviePanel);
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    closeMoviePanel();
-  }
 });
