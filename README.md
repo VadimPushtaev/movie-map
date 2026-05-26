@@ -10,6 +10,15 @@ docker compose up --build
 
 Open http://localhost:7419.
 
+## Run Locally
+
+```bash
+poetry install
+poetry run python -m app.main
+```
+
+Open http://localhost:7419.
+
 ## Configure Countries
 
 Use two-letter country IDs from the SVG:

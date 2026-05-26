@@ -77,6 +77,12 @@ countries:
     year: 2015
     imdb: https://www.imdb.com/title/tt4780662/
     image: /static/images/japan-happy-hour.jpg
+  LT:
+    country: Lithuania
+    title: Slow
+    year: 2023
+    imdb: https://www.imdb.com/title/tt15289510/?ref_=nm_knf_t_1
+    image: /static/images/lithuania-slow.jpg
   LV:
     country: Latvia
     title: Flow
