@@ -138,7 +138,12 @@ countries:
     image: /static/images/ukraine-mavka-the-forest-song.jpg
   US:
     country: United States
-    title: Before Sunrise
-    year: 1995
-    imdb: https://www.imdb.com/title/tt0112471/
-    image: /static/images/us-before-sunrise.jpg
+    title: Before Sunset
+    year: 2004
+    imdb: https://www.imdb.com/title/tt0381681/
+    image: /static/images/us-before-sunset.jpg
+    # Previous United States pick, kept for quick switching:
+    # title: Before Sunrise
+    # year: 1995
+    # imdb: https://www.imdb.com/title/tt0112471/
+    # image: /static/images/us-before-sunrise.jpg
