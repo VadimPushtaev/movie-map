@@ -65,6 +65,12 @@ countries:
     year: 1981
     imdb: https://www.imdb.com/title/tt0083931/
     image: /static/images/hungary-son-of-the-white-mare.jpg
+  IN:
+    country: India
+    title: All We Imagine as Light
+    year: 2024
+    imdb: https://www.imdb.com/title/tt32086077/
+    image: /static/images/india-all-we-imagine-as-light.jpg
   IR:
     country: Iran
     title: The Circle
