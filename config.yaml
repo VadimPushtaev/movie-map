@@ -5,6 +5,12 @@ countries:
     year: 2023
     imdb: https://www.imdb.com/title/tt15560314/
     image: /static/images/bhutan-the-monk-and-the-gun.jpg
+  BY:
+    country: Belarus
+    title: Crystal Swan
+    year: 2018
+    imdb: https://www.imdb.com/title/tt6835498/
+    image: /static/images/belarus-crystal-swan.jpg
   CN:
     country: China
     title: Crouching Tiger, Hidden Dragon
@@ -89,6 +95,12 @@ countries:
     year: 2024
     imdb: https://www.imdb.com/title/tt4772188/
     image: /static/images/latvia-flow.jpg
+  "NO":
+    country: Norway
+    title: Sentimental Value
+    year: 2025
+    imdb: https://www.imdb.com/title/tt27714581/
+    image: /static/images/norway-sentimental-value.jpg
   PL:
     country: Poland
     title: Green Border
@@ -113,3 +125,9 @@ countries:
     year: 2023
     imdb: https://www.imdb.com/title/tt6685538/
     image: /static/images/ukraine-mavka-the-forest-song.jpg
+  US:
+    country: United States
+    title: Before Sunrise
+    year: 1995
+    imdb: https://www.imdb.com/title/tt0112471/
+    image: /static/images/us-before-sunrise.jpg
