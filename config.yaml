@@ -79,10 +79,15 @@ countries:
     image: /static/images/iran-the-circle.jpg
   IT:
     country: Italy
-    title: There's Still Tomorrow
-    year: 2023
-    imdb: https://www.imdb.com/title/tt21800162/
-    image: /static/images/italy-theres-still-tomorrow.jpg
+    title: Happy as Lazzaro
+    year: 2018
+    imdb: https://www.imdb.com/title/tt6752992/
+    image: /static/images/italy-happy-as-lazzaro.jpg
+    # Previous Italy pick, kept for quick switching:
+    # title: There's Still Tomorrow
+    # year: 2023
+    # imdb: https://www.imdb.com/title/tt21800162/
+    # image: /static/images/italy-theres-still-tomorrow.jpg
   JP:
     country: Japan
     title: Happy Hour
