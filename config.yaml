@@ -1,4 +1,10 @@
 countries:
+  BE:
+    country: Belgium
+    title: Titane
+    year: 2021
+    imdb: https://www.imdb.com/title/tt10944760/
+    image: /static/images/belgium-titane.jpg
   BT:
     country: Bhutan
     title: The Monk and the Gun
@@ -77,6 +83,12 @@ countries:
     year: 2000
     imdb: https://www.imdb.com/title/tt0255094/
     image: /static/images/iran-the-circle.jpg
+  IQ:
+    country: Iraq
+    title: The President's Cake
+    year: 2025
+    imdb: https://www.imdb.com/title/tt36580119/
+    image: /static/images/iraq-the-presidents-cake.jpg
   IT:
     country: Italy
     title: Happy as Lazzaro
