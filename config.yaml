@@ -5,6 +5,12 @@ countries:
     year: 2021
     imdb: https://www.imdb.com/title/tt10944760/
     image: /static/images/belgium-titane.jpg
+  BG:
+    country: Bulgaria
+    title: Fleur bleue
+    year: 2026
+    imdb: https://www.imdb.com/title/tt29271639/
+    image: /static/images/bulgaria-fleur-bleue.jpg
   BT:
     country: Bhutan
     title: The Monk and the Gun
