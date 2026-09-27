@@ -1,4 +1,10 @@
 countries:
+  AT:
+    country: Austria
+    title: Everytime
+    year: 2026
+    imdb: https://www.imdb.com/title/tt41592057/
+    image: /static/images/austria-everytime.jpg
   BE:
     country: Belgium
     title: Titane
@@ -25,10 +31,10 @@ countries:
     image: /static/images/belarus-crystal-swan.jpg
   CN:
     country: China
-    title: Crouching Tiger, Hidden Dragon
-    year: 2000
-    imdb: https://www.imdb.com/title/tt0190332/
-    image: /static/images/china-crouching-tiger-hidden-dragon.jpg
+    title: A Girl Unknown
+    year: 2026
+    imdb: https://www.imdb.com/title/tt32459280/
+    image: /static/images/china-a-girl-unknown.jpg
   DE:
     country: Germany
     title: Stroszek
@@ -47,6 +53,12 @@ countries:
     year: 2023
     imdb: https://www.imdb.com/title/tt23640230/
     image: /static/images/estonia-smoke-sauna-sisterhood.jpg
+  ES:
+    country: Spain
+    title: Sundays
+    year: 2025
+    imdb: https://www.imdb.com/title/tt35513027/
+    image: /static/images/spain-sundays.jpg
   FR:
     country: France
     title: Little Amelie or the Character of Rain
@@ -95,6 +107,12 @@ countries:
     year: 2025
     imdb: https://www.imdb.com/title/tt36580119/
     image: /static/images/iraq-the-presidents-cake.jpg
+  IS:
+    country: Iceland
+    title: The Love That Remains
+    year: 2025
+    imdb: https://www.imdb.com/title/tt33381401/
+    image: /static/images/iceland-the-love-that-remains.jpg
   IT:
     country: Italy
     title: Happy as Lazzaro
@@ -112,6 +130,12 @@ countries:
     year: 2015
     imdb: https://www.imdb.com/title/tt4780662/
     image: /static/images/japan-happy-hour.jpg
+  KR:
+    country: South Korea
+    title: Memories of Murder
+    year: 2003
+    imdb: https://www.imdb.com/title/tt0353969/
+    image: /static/images/south-korea-memories-of-murder.jpg
   LT:
     country: Lithuania
     title: Slow
@@ -130,6 +154,12 @@ countries:
     year: 2025
     imdb: https://www.imdb.com/title/tt27714581/
     image: /static/images/norway-sentimental-value.jpg
+  NP:
+    country: Nepal
+    title: Elephants in the Fog
+    year: 2026
+    imdb: https://www.imdb.com/title/tt29279937/
+    image: /static/images/nepal-elephants-in-the-fog.jpg
   PL:
     country: Poland
     title: Green Border

@@ -116,7 +116,8 @@ def add_image_pattern(defs: ET.Element, pattern_id: str, image_url: str) -> None
             "width": "1",
             "height": "1",
             "patternUnits": "objectBoundingBox",
-            "patternContentUnits": "objectBoundingBox",
+            "viewBox": "0 0 2 3",
+            "preserveAspectRatio": "xMidYMid slice",
         },
     )
     image = ET.SubElement(
@@ -125,8 +126,8 @@ def add_image_pattern(defs: ET.Element, pattern_id: str, image_url: str) -> None
         {
             "x": "0",
             "y": "0",
-            "width": "1",
-            "height": "1",
+            "width": "2",
+            "height": "3",
             "preserveAspectRatio": "xMidYMid slice",
         },
     )
